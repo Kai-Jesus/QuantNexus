@@ -34,6 +34,7 @@ PENDLE 相较于 ETH 市值更小，因此波动性更高。当 ETH 突破关键
 计算 Granger 因果关系 p-value：
 如果 p-value 显著小于 0.05，可以认为 ETH 价格对 PENDLE 价格具有因果影响。
 
+![image](https://github.com/user-attachments/assets/c529a20c-2db2-4f1a-ada0-f3c294c89990)
 
 基于 GNN（图神经网络）的因果建模
 由于传统的 Granger 因果检验仅限于线性因果关系，利用**基于图的神经网络（如 FcGAGA）**来建立更复杂的因果模型：
