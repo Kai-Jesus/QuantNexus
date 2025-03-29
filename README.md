@@ -5,11 +5,13 @@
 神经网络
 ETH/USDT
 PENDLE/USDT
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/ed9f4513-beec-44cc-8d36-6093aab870c1" />
 
 Granger Causality（历史数据预测未来是有局限的，所以主要的研究方向是让神经网络学习到币和币中间的关系变化来预测一个很短期的迟滞窗口。因为这个是一个数据规律肯定可以被预测出来的）
 
 N-beats
 FcGAGA（Granger-Gated Attention Graph Aggregator）是一种专为时间序列预测任务设计的深度学习模型，结合了Granger因果关系、图神经网络（GNN）和注意力机制（Attention），旨在高效地提取时间序列中的关键特征，并增强多变量时间序列数据中的因果推理能力。
+<img width="645" alt="image" src="https://github.com/user-attachments/assets/05fefdda-504b-4817-910f-b0e061b1b2a0" />
 
 
 ETH/USDT 与 PENDLE/USDT 的因果关系
@@ -33,6 +35,8 @@ PENDLE 相较于 ETH 市值更小，因此波动性更高。当 ETH 突破关键
 使用Vector AutoRegression (VAR) 模型，设定 ETH 价格的滞后项（Lags）。
 计算 Granger 因果关系 p-value：
 如果 p-value 显著小于 0.05，可以认为 ETH 价格对 PENDLE 价格具有因果影响。
+<img width="645" alt="image" src="https://github.com/user-attachments/assets/8eedcd20-b19c-4c40-9b3a-f1a6216d9c81" />
+
 
 ![image](https://github.com/user-attachments/assets/c529a20c-2db2-4f1a-ada0-f3c294c89990)
 
@@ -41,9 +45,15 @@ PENDLE 相较于 ETH 市值更小，因此波动性更高。当 ETH 突破关键
 将 ETH 和 PENDLE 作为两个时间序列节点，建立因果图（Causal Graph）。
 通过门控注意力机制（Gated Attention），让模型自适应地学习 ETH 价格变化对 PENDLE 的影响权重。
 结合 Transformer 或 LSTM 进行预测，提高捕捉非线性关系的能力。
+<img width="635" alt="image" src="https://github.com/user-attachments/assets/28cd59be-daf7-4586-9940-9cfe003eb17f" />
+
 
 边缘级任务
 边缘级推理的一个例子是图像场景理解。除了识别图像中的对象之外，深度学习模型还可用于预测它们之间的关系。将其表述为边缘级分类：给定表示图像中对象的节点，希望预测这些节点中的哪些共享边缘或该边缘的值是多少。如果想发现实体之间的联系，可以认为图是完全连通的，并根据它们的预测值修剪边缘以得到稀疏图。
+<img width="635" alt="image" src="https://github.com/user-attachments/assets/3f60127f-286d-4ace-8ad6-d1be1857f2e2" />
+
+
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/fa8e5fde-5f46-41d4-b168-f5d64b5616c2" />
 
 
 
